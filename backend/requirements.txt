@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pydantic
+scikit-learn
+pandas
+numpy
+huggingface_hub
+transformers
+torch
+pytest
+pytest-asyncio

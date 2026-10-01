@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Job Title 0",
+        "type": 0,
+        "cleaned_text": "profile requirements description text"
+    },
+    {
+        "title": "Job Title 1",
+        "type": 0,
+        "cleaned_text": "profile requirements benefits description text"
+    },
+    {
+        "title": "Job Title 2",
+        "type": 0,
+        "cleaned_text": "profile requirements description text"
+    },
+    {
+        "title": "Job Title 3",
+        "type": 0,
+        "cleaned_text": "profile requirements benefits description text"
+    },
+    {
+        "title": "Job Title 4",
+        "type": 0,
+        "cleaned_text": "requirements description text"
+    }
+]

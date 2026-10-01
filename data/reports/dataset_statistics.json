@@ -1,0 +1,31 @@
+{
+    "total_samples": 17880,
+    "columns": [
+        "job_id",
+        "title",
+        "location",
+        "department",
+        "company_profile",
+        "description",
+        "requirements",
+        "benefits",
+        "fraudulent",
+        "type",
+        "merged_text",
+        "cleaned_text"
+    ],
+    "missing_values_after_handling": {
+        "job_id": 0,
+        "title": 0,
+        "location": 0,
+        "department": 0,
+        "company_profile": 0,
+        "description": 0,
+        "requirements": 0,
+        "benefits": 0,
+        "fraudulent": 0,
+        "type": 0,
+        "merged_text": 0,
+        "cleaned_text": 0
+    }
+}

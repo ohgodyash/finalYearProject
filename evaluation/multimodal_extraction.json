@@ -1,0 +1,78 @@
+{
+    "source_type": "IMAGE",
+    "original_image_path": "data/dummy_scam.png",
+    "ocr_confidence": 93.22222222222223,
+    "extracted_text": "Earn $500 daily! WhatsApp me. Contact hr@gmail.com. Immediate start.",
+    "entities": {
+        "ORG": [
+            "WhatsApp"
+        ],
+        "PERSON": [],
+        "MONEY": [
+            "500"
+        ],
+        "GPE": [],
+        "EMAIL": [
+            "hr@gmail.com"
+        ],
+        "PHONE": [],
+        "URL": []
+    },
+    "scam_indicators": [
+        "urgency",
+        "suspicious_contact",
+        "exaggerated_comp"
+    ],
+    "evidence_locations_sample": [
+        {
+            "text": "Earn",
+            "confidence": 95,
+            "bounding_box": {
+                "x": 12,
+                "y": 30,
+                "w": 61,
+                "h": 20
+            }
+        },
+        {
+            "text": "$500",
+            "confidence": 86,
+            "bounding_box": {
+                "x": 82,
+                "y": 27,
+                "w": 70,
+                "h": 26
+            }
+        },
+        {
+            "text": "daily!",
+            "confidence": 93,
+            "bounding_box": {
+                "x": 161,
+                "y": 29,
+                "w": 68,
+                "h": 27
+            }
+        },
+        {
+            "text": "WhatsApp",
+            "confidence": 92,
+            "bounding_box": {
+                "x": 239,
+                "y": 29,
+                "w": 137,
+                "h": 27
+            }
+        },
+        {
+            "text": "me.",
+            "confidence": 96,
+            "bounding_box": {
+                "x": 385,
+                "y": 35,
+                "w": 46,
+                "h": 15
+            }
+        }
+    ]
+}

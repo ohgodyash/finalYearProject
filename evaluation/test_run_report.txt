@@ -1,0 +1,99 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.13.9, pytest-9.1.1, pluggy-1.6.0 -- /Users/ohgodyash/final year group project/codingFinalYearProject/backend/venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/ohgodyash/final year group project/codingFinalYearProject
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... collected 73 items
+
+tests/test_all_phases.py::TestPhase1Architecture::test_required_directories_exist PASSED [  1%]
+tests/test_all_phases.py::TestPhase1Architecture::test_required_documentation_exists PASSED [  2%]
+tests/test_all_phases.py::TestPhase1Architecture::test_backend_main_importable PASSED [  4%]
+tests/test_all_phases.py::TestPhase1Architecture::test_api_health_route_exists PASSED [  5%]
+tests/test_all_phases.py::TestPhase1Architecture::test_api_health_endpoint_returns_ok PASSED [  6%]
+tests/test_all_phases.py::TestPhase1Architecture::test_ml_modules_importable PASSED [  8%]
+tests/test_all_phases.py::TestPhase1Architecture::test_frontend_scaffold_exists PASSED [  9%]
+tests/test_all_phases.py::TestPhase1Architecture::test_architecture_documents_are_nonempty PASSED [ 10%]
+tests/test_all_phases.py::TestPhase1Architecture::test_no_hardcoded_credentials_in_docs PASSED [ 12%]
+tests/test_all_phases.py::TestPhase2EMSCADPipeline::test_dataset_loads PASSED [ 13%]
+tests/test_all_phases.py::TestPhase2EMSCADPipeline::test_fraudulent_column_exists PASSED [ 15%]
+tests/test_all_phases.py::TestPhase2EMSCADPipeline::test_no_extra_label_leakage_in_raw PASSED [ 16%]
+tests/test_all_phases.py::TestPhase2EMSCADPipeline::test_missing_value_handling PASSED [ 17%]
+tests/test_all_phases.py::TestPhase2EMSCADPipeline::test_duplicate_detection_runs PASSED [ 19%]
+tests/test_all_phases.py::TestPhase2EMSCADPipeline::test_fraud_categories_all_four_labels PASSED [ 20%]
+tests/test_all_phases.py::TestPhase2EMSCADPipeline::test_fraud_category_proportions PASSED [ 21%]
+tests/test_all_phases.py::TestPhase2EMSCADPipeline::test_split_files_exist_and_non_empty PASSED [ 23%]
+tests/test_all_phases.py::TestPhase2EMSCADPipeline::test_split_sizes_are_reasonable PASSED [ 24%]
+tests/test_all_phases.py::TestPhase2EMSCADPipeline::test_no_index_overlap_between_splits PASSED [ 26%]
+tests/test_all_phases.py::TestPhase2EMSCADPipeline::test_test_set_class_distribution_preserved PASSED [ 27%]
+tests/test_all_phases.py::TestPhase2EMSCADPipeline::test_imbalance_report_exists PASSED [ 28%]
+tests/test_all_phases.py::TestPhase2EMSCADPipeline::test_reproducibility_random_seed PASSED [ 30%]
+tests/test_all_phases.py::TestPhase3ClassicalML::test_rule_based_features_returns_dataframe PASSED [ 31%]
+tests/test_all_phases.py::TestPhase3ClassicalML::test_rule_based_features_binary_values PASSED [ 32%]
+tests/test_all_phases.py::TestPhase3ClassicalML::test_rule_based_predict_returns_valid_labels PASSED [ 34%]
+tests/test_all_phases.py::TestPhase3ClassicalML::test_tfidf_lr_trains_and_predicts PASSED [ 35%]
+tests/test_all_phases.py::TestPhase3ClassicalML::test_tfidf_rf_trains_and_predicts PASSED [ 36%]
+tests/test_all_phases.py::TestPhase3ClassicalML::test_evaluate_model_function PASSED [ 38%]
+tests/test_all_phases.py::TestPhase3ClassicalML::test_classical_results_saved PASSED [ 39%]
+tests/test_all_phases.py::TestPhase3ClassicalML::test_no_test_contamination_in_vectorizer PASSED [ 41%]
+tests/test_all_phases.py::TestPhase4Transformer::test_tokenizer_encodes_text PASSED [ 42%]
+tests/test_all_phases.py::TestPhase4Transformer::test_model_produces_correct_output_shape PASSED [ 43%]
+tests/test_all_phases.py::TestPhase4Transformer::test_probability_outputs_sum_to_one PASSED [ 45%]
+tests/test_all_phases.py::TestPhase4Transformer::test_inference_returns_required_fields PASSED [ 46%]
+tests/test_all_phases.py::TestPhase4Transformer::test_inference_does_not_return_risk_score PASSED [ 47%]
+tests/test_all_phases.py::TestPhase4Transformer::test_checkpoint_was_saved PASSED [ 49%]
+tests/test_all_phases.py::TestPhase4Transformer::test_checkpoint_loadable PASSED [ 50%]
+tests/test_all_phases.py::TestPhase5OCR::test_clear_screenshot_returns_text PASSED [ 52%]
+tests/test_all_phases.py::TestPhase5OCR::test_ocr_preserves_original_image_path PASSED [ 53%]
+tests/test_all_phases.py::TestPhase5OCR::test_ocr_confidence_is_recorded PASSED [ 54%]
+tests/test_all_phases.py::TestPhase5OCR::test_ocr_evidence_locations_preserved PASSED [ 56%]
+tests/test_all_phases.py::TestPhase5OCR::test_blank_image_does_not_crash PASSED [ 57%]
+tests/test_all_phases.py::TestPhase5OCR::test_nonexistent_file_returns_error_dict PASSED [ 58%]
+tests/test_all_phases.py::TestPhase5OCR::test_ocr_text_enters_entity_extractor PASSED [ 60%]
+tests/test_all_phases.py::TestPhase5OCR::test_scam_indicators_extracted_from_screenshot PASSED [ 61%]
+tests/test_all_phases.py::TestPhase5OCR::test_source_type_recorded_as_image PASSED [ 63%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_entity_has_required_fields PASSED [ 64%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_entity_value_is_nonempty PASSED [ 65%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_confidence_in_valid_range PASSED [ 67%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_email_extracted_from_clean_ad PASSED [ 68%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_domain_derived_from_email PASSED [ 69%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_url_extracted PASSED [ 71%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_phone_extracted_from_message PASSED [ 72%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_salary_extracted PASSED [ 73%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_payment_method_extracted PASSED [ 75%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_crypto_wallet_extracted PASSED [ 76%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_no_entities_invented_from_plain_text PASSED [ 78%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_malformed_input_does_not_crash PASSED [ 79%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_empty_string_returns_empty_list PASSED [ 80%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_deduplication_no_repeated_entities PASSED [ 82%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_relationships_list_returned PASSED [ 83%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_email_domain_relationship_built PASSED [ 84%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_recruiter_email_relationship_built PASSED [ 86%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_message_phone_relationship_built PASSED [ 87%]
+tests/test_all_phases.py::TestPhase6EntityExtraction::test_evidence_reference_traceable PASSED [ 89%]
+tests/test_all_phases.py::TestCrossPhaseIntegration::test_A_text_to_classical_ml PASSED [ 90%]
+tests/test_all_phases.py::TestCrossPhaseIntegration::test_A_text_to_distilbert PASSED [ 91%]
+tests/test_all_phases.py::TestCrossPhaseIntegration::test_B_image_to_entity_extraction PASSED [ 93%]
+tests/test_all_phases.py::TestCrossPhaseIntegration::test_B_image_to_distilbert PASSED [ 94%]
+tests/test_all_phases.py::TestCrossPhaseIntegration::test_C_image_scam_entities_present PASSED [ 95%]
+tests/test_all_phases.py::TestCrossPhaseIntegration::test_D_invalid_inputs_do_not_crash PASSED [ 97%]
+tests/test_all_phases.py::TestCrossPhaseIntegration::test_D_api_invalid_text_returns_422 PASSED [ 98%]
+tests/test_all_phases.py::TestCrossPhaseIntegration::test_D_api_unsupported_media_type_returns_415 PASSED [100%]
+
+=============================== warnings summary ===============================
+tests/test_all_phases.py::TestPhase1Architecture::test_api_health_endpoint_returns_ok
+  /Users/ohgodyash/final year group project/codingFinalYearProject/backend/venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+tests/test_all_phases.py::TestPhase2EMSCADPipeline::test_dataset_loads
+tests/test_all_phases.py::TestPhase2EMSCADPipeline::test_dataset_loads
+tests/test_all_phases.py::TestPhase4Transformer::test_tokenizer_encodes_text
+  /Users/ohgodyash/final year group project/codingFinalYearProject/backend/venv/lib/python3.13/site-packages/_pytest/fixtures.py:1313: PytestRemovedIn10Warning: Class-scoped fixture defined as instance method is deprecated.
+  Instance attributes set in this fixture will NOT be visible to test methods,
+  as each test gets a new instance while the fixture runs only once per class.
+  Use @classmethod decorator and set attributes on cls instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#class-scoped-fixture-as-instance-method
+    fixturefunc = resolve_fixture_function(fixturedef, request)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 73 passed, 4 warnings in 9.54s ========================

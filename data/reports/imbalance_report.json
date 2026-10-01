@@ -1,0 +1,22 @@
+{
+    "overall_distribution": {
+        "0": 17014,
+        "1": 554,
+        "2": 233,
+        "3": 79
+    },
+    "train_distribution": {
+        "0": 11910,
+        "1": 388,
+        "2": 163,
+        "3": 55
+    },
+    "test_distribution": {
+        "0": 3403,
+        "1": 111,
+        "2": 46,
+        "3": 16
+    },
+    "imbalance_ratio_real_vs_fraud": 19.64665127020785,
+    "note": "Test set has been kept strictly isolated and NOT oversampled, per research methodology."
+}
